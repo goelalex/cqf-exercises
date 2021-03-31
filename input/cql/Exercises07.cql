@@ -33,10 +33,19 @@ Write a query to return only Laboratory results that are final or
 amended and have a quantitative result
 */
 
+define "Final or Amended Laboratory Results":
+  [Observation: category in "Laboratory"] O
+  //use category and Laboratory ValueSet as best practice '
+  where O.status in {'final', 'amended' }
+  and O.value is Quantity
+  //Observations that only have a quanitity
+
 /*
 Write a query to return encounters that have a quantitative laboratory result
 during the encounter
 */
+
+
 
 /*
 Write a query to return encounters that did not have a procedure performed

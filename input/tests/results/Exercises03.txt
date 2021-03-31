@@ -1,0 +1,99 @@
+Running tests.
+No tests found at /Users/alex/Documents/GitHub/cqf-exercises/input/tests. Evaluation may fail if data is required.
+Terminology path: /Users/alex/Documents/GitHub/cqf-exercises/input/vocabulary/valueset
+Test AdHoc
+Tue Mar 30 2021 13:26:43 GMT-0400 (Eastern Daylight Time)
+String Equality=true
+String Equivalence=true
+String Comparison=true
+String Inequality=true
+String Inequivalence=true
+String Equality With Null=true
+String Equivalence With Null=true
+T1=Tuple {
+	"X": 1
+	"Y": null
+}
+T2=Tuple {
+	"X": 1
+	"Y": null
+}
+T3=Tuple {
+	"X": 1
+	"Y": 2
+}
+TEqual=true
+TEqualWithNull=true
+TEquivalent=true
+C1=Code { code: ABC, system: http://example.com, version: 2017-01, display: Code ABC }
+C2=Code { code: ABC, system: http://example.com, version: 2017-05, display: Variant Description }
+CEqual=true
+CEquivalent=true
+Standard Precedence=true
+Force Precedence=true
+Division Always Results in a Decimal=true
+Truncated Divide for Integer Division=true
+Modulo is the Remainder=true
+Negation=true
+Absolute Value=true
+Successor Of=true
+Predecessor Of=true
+Minimum Integer=true
+Maximum Integer=true
+Default Round=true
+Precision Round=true
+Truncate=true
+Truncate Negative=true
+Floor=true
+Floor Negative=true
+Ceiling=true
+Ceiling Negative=true
+Integer Exponent=false
+Decimal Exponent=true
+Logarithm Base 5=true
+Logarithm Base 25=true
+Natural Logarithm=false
+Exponent=false
+String Concatenate=ABCD
+String Concatenate With Nulls=null
+String Null Concatenate=ABCD
+String Length=4
+String Indexer=A
+PositionOf=2
+LastPositionOf=4
+StartsWith=false
+EndsWith=false
+Matches=true
+ReplaceMatches=ABXD
+Date Equal=false
+Date Less Than=true
+Date Less Or Equal=true
+Same Year As=true
+Same Year Or Before=true
+Before Year Of=true
+Day Quantity=1 'day'
+Years Quantity=2 'years'
+Minutes Quantity=30 'minutes'
+UCUM Days=1 'd'
+UCUM Annum=2 'a'
+UCUM Minutes=30 'min'
+1 Year Ago=2020-03-30
+Add 30 Minutes=2014-02-01T15:00
+Add 24 Months=2016
+Calendar Years Equivalent To UCUM Annum (a)=true
+Calendar Months Equivalent To UCUM Month (mo)=true
+Calendar Weeks Equal To UCUM Weeks (wk)=true
+Calendar Days Equal To UCUM Days (d)=true
+Calendar Hours Equal To UCUM Hours (h)=true
+Calendar Minutes Equal To UCUM Minutes (min)=true
+Calendar Seconds Equal To UCUM Seconds (s)=true
+Calendar Milliseconds Equal To UCUM Milliseconds (ms)=true
+Duration In Months Between=0
+Difference In Months Between=1
+strength=10.0 'mg/mL'
+If Conditional=10.0 'mg/mL'
+unit=MG/ACTUAT
+Selected Case Conditional=mg/{actuat}
+doseFormCode=316897
+Conditional Case=12.6
+elapsed: 5.196 seconds

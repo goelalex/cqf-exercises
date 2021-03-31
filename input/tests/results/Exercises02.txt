@@ -1,0 +1,69 @@
+Running tests.
+No tests found at /Users/alex/Documents/GitHub/cqf-exercises/input/tests. Evaluation may fail if data is required.
+Terminology path: /Users/alex/Documents/GitHub/cqf-exercises/input/vocabulary/valueset
+Test AdHoc
+Tue Mar 30 2021 13:10:50 GMT-0400 (Eastern Daylight Time)
+Boolean True=true
+Boolean False=false
+Boolean Not=true
+Boolean And=false
+Boolean Xor=true
+Boolean Implies=null
+Simple String=John Doe
+String Escapes=John O'Mally
+String Equality=true
+String Comparisons=true
+Integer=5
+Decimal=5.0
+Implicit Decimal Conversion=10.0
+Decimal Comparison Ignores Precision=true
+Standard Arithmetic Precedence=52
+Use Parentheses to Force Precedence=70
+Division Returns Decimal=5
+Use Truncated Divide (div) for Integer Division=5
+Mod returns remainder=0
+Mass Quantity=25 'mg'
+Length Quantity=100 'cm2'
+Respect the Units=null
+Calculate the Units=100 'cm'
+Date Value=2021-03-01
+DateTime Value=2021-03-01T14:30:14.005
+Time Value (at midnight)=12:00:00.000
+Time Value=14:30:14.005
+Partial Date (Year)=2014
+Partial Date (Year-Month)=2014-01
+Partial Time (Hour)=14
+Partial Time (Hour Minute)=14:30
+DateTime Function=2014-07-05
+Time Function=14:30
+Date From=2014-01-25
+Time From=14:30:14
+Component From (Year)=2014
+Now Function=2021-03-30T13:10:56.991
+Today Function=2021-03-30
+TimeOfDay Function=13:10:56.991
+Simple Info=Tuple {
+	"name": Patrick
+	"dob": 2014-01-01
+}
+Nested Info=Tuple {
+	"name": Patrick
+	"dob": 2014-01-01
+	"address": Tuple {
+	"line1": 41 Spinning Ave
+	"city": Dayton
+	"state": OH
+}
+	"phones": [Tuple {
+	"number": 202-413-1234
+	"use": home
+}]
+}
+Null Comparison=null
+Null Arithmetic=null
+Null Predicate=false
+Not Null Predicate=true
+3-Valued Logic And=false
+3-Valued Logic Or=true
+Coalesce Expression=1
+elapsed: 6.955 seconds
