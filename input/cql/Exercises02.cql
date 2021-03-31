@@ -22,17 +22,19 @@ Fill in the blanks to make the expressions evaluate to true
 // # Boolean Values
 
 define "Boolean Not":
-  (not true) is _____
+  (not true) is false
 
 define "Boolean And":
-  (true and false) is _____
+  (true and false) is false
 
 define "Boolean Xor":
-  true xor false is _____
+  true xor false is true
 
 // NOTE: Translator Known Issue [#617](https://github.com/cqframework/clinical_quality_language/issues/617)
+/*
 define "Boolean Implies":
-  (false implies true) is _____
+  (false implies true) is true
+*/
 
 // # String Values
 
@@ -43,10 +45,12 @@ define "String Escapes":
   'John O\'Mally'
 
 define "String Equality":
-  ('John Doe' = 'john doe') is _____
+  ('John Doe' = 'john doe') is false
+  //case sensitive so does not equal
 
 define "String Comparisons":
-  ('Deer' < 'Doe') is _____
+  ('Deer' < 'Doe') is true
+  //deer is less than Doe
 
 // # Numbers
 

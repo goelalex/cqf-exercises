@@ -18,30 +18,37 @@ library Exercises01
 /*
 // This is a comment
 // Whitespace is all the "invisibles" (spaces, tabs, returns)
-DEFINE "This is a quoted identifier:
-  @20210329 + 3 days
+*/
+define "This is a quoted identifier":
+  @2021-03-29 + 3 days
 
-define 1MoreIdentifier:
-  .0 'g'
+define "_1MoreIdentifier":
+//cannot start identifier with a number
+  0.0 'g'
 
 // # Syntax Errors
 
-define "Inequality Expression"
-  4 <> 5
+define "Inequality Expression":
+  (4 != 5)
+  //not equal
 
 define "Relative Comparison Expression":
-  4 < = 5
+  4 <= 5
+  //no spaces in operator
 
 define "Quantity Expression":
-  5 g/dL
+  5' g/dL'
+  //UCUM units needs to be in string with ''
 
 // # Semantic Errors
 
 define "Reference Expression":
-  "quantity expression"
+  "Quantity Expression"
+  //identifier is case sensitive
 
 define "String Concatenation":
-  1 + 'John'
+  '1' + 'John'
+  //cannot add integers and strings, have labelled number as string with ''
 
 define "Warning Message":
   Message(1, true, '123', 'Warning', 'This is a warning message')
