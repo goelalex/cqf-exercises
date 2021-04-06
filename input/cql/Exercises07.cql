@@ -28,6 +28,8 @@ code "Blood Glucose": '2339-0' from "LOINC" display 'Glucose Bld-mCnc'
 // Act Codes
 code "Inpatient Encounter": 'IMP' from "ActCode" display 'Inpatient Encounter'
 
+context Patient
+
 /*
 Write a query to return only Laboratory results that are final or
 amended and have a quantitative result
