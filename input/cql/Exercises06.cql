@@ -41,16 +41,10 @@ Use the FHIR [Encounter](http://hl7.org/fhir/encounter.html)
 define "Inpatient Encounters":
   [Encounter: class ~ "Inpatient Encounter"]
 
-define "Inpatient Encounters":
-  [Encounter: class ~ "Inpatient Encounter"]
-
 /*
 Write a definition to retrieve Medication Requests
 Use the FHIR [MedicationRequest](http://hl7.org/fhir/medicationrequest.html)
 */
-define "Medication Requests":
-  [MedicationRequest]
-
 define "Medication Requests":
   [MedicationRequest]
 
@@ -68,8 +62,6 @@ Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
 define "Observations":
   [Observation]
 
-define "Observations":
-  [Observation]
 /*
 Write a definition to retrieve all vital signs
 Use the FHIR [Observation](http://hl7.org/fhir/observation.html)

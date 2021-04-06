@@ -195,3 +195,14 @@ define "3-Valued Logic Or":
 
 define "Coalesce Expression":
   Coalesce(null, 1)
+  // Coalesce returns first non-null value
+
+define "one is one ":
+  1 is not null
+  //returns true
+
+define "My List":
+  { null, null, null, 1, 2, 3, 4, 5}
+
+  define "Coalesce My List":
+    Coalesce ("My List")

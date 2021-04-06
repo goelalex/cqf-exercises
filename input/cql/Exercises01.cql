@@ -29,7 +29,7 @@ define "_1MoreIdentifier":
 // # Syntax Errors
 
 define "Inequality Expression":
-  (4 != 5)
+  4 != 5
   //not equal
 
 define "Relative Comparison Expression":
