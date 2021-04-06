@@ -45,18 +45,51 @@ Write a query to return encounters that have a quantitative laboratory result
 during the encounter
 */
 
+define "Quantitative Laboratory Encounters":
+  [Encounter] E
+    with [Observation: category in Laboratory]O
+      such that O.status in {'final', 'amended' }
+      and O.value is Quantity
+      and O.effective as dateTime during E.period
+      //Observations that have an effective dateTime during that encounter
+      and O.encounter is not null
 
+//Better version:
+define "Quantitative Laboratory Encounters (2)":
+  [Encounter] E
+    with "Final or Amended Laboratory Results" O
+    //use the previous query duh
+      such that O.effective as dateTime during E.period
 
 /*
 Write a query to return encounters that did not have a procedure performed
 during the encounter
 */
 
+define "Procedure":
+[Procedure]
+
+define "Encounter Without Procedure":
+  [Encounter] E
+    without [Procedure] P
+      such that P.performed as dateTime during E.period
+
 /*
 Write a query to return the most recent blood glucose observation
 */
+
+define "Blood Glucose Observations":
+  "Final or Amended Laboratory Results" O
+      where O.code ~ "Blood Glucose"
+      sort by FHIRHelpers.ToDateTime(effective as dateTime) desc
+
+define "Most Recent Blood Glucose":
+  First("Blood Glucose Observations")
+
 
 /*
 Write a definition that returns the difference between the two most recent
 blood glucose observations
 */
+
+define "Difference Between Two Most Recent Blood Glucose":

@@ -75,5 +75,5 @@ define "Vital Signs":
 Write a definition to retrieve all laboratory results
 Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
 */
-define "Vital Signs":
-  [Observation: category in "Labratory"]
+define "Laboratory Test":
+  [Observation: category in "Laboratory"]
